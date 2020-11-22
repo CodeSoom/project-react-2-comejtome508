@@ -1,7 +1,24 @@
 import React from 'react';
 
+function List() {
+  return null;
+}
+
+function Question() {
+  return null;
+}
+
+function Choices() {
+  return null;
+}
+
 export default function App() {
   return (
-    <h1>Hello, world!</h1>
+    <div>
+      <List />
+      <hr />
+      <Question />
+      <Choices />
+    </div>
   );
 }
