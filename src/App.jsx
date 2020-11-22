@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 
 import Choices from './Choices';
 import Question from './Question';
-
-function List() {
-  return null;
-}
+import List from './List';
 
 export default function App() {
   const [state, setState] = useState({
@@ -21,11 +18,22 @@ export default function App() {
     ],
   });
 
-  const { questions } = state;
+  const choices = [
+    {
+      id: 1,
+      content: '선택된 질문 1',
+    },
+    {
+      id: 2,
+      content: '선택된 질문 2',
+    },
+  ];
+
+  const { questions, choices } = state;
 
   return (
     <div>
-      <List />
+      <List list={choices} />
       <hr />
       <Question questions={questions} />
       <Choices />

@@ -1,9 +1,13 @@
 import React from 'react';
 
-export default function Listt ({list}) {
+export default function List ({ choices }) {
   return (
-    <div>
-      'Saved Question 1'
-    </div>
+    <li>
+      {choices.map((choice) => (
+        <p key={choice.id}>
+          {choice.content}
+        </p>
+      ))}
+    </li>
   );
 } 
