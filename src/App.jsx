@@ -1,10 +1,8 @@
 import React from 'react';
 
-function List() {
-  return null;
-}
+import Question from './Choices';
 
-function Question() {
+function List() {
   return null;
 }
 

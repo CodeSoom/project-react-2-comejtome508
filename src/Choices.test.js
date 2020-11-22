@@ -1,8 +1,10 @@
 import React from 'react';
 
+import Question from './Choices';
+
 import { render } from '@testing-library/react';
 
-test('Question', () => {
+test('Choices', () => {
   const { getByText } = render((
     <Question />
   ));
