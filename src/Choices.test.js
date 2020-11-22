@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Question from './Choices';
+import Choices from './Choices';
 
 import { render } from '@testing-library/react';
 
 test('Choices', () => {
   const { getByText } = render((
-    <Question />
+    <Choices />
   ));
 
   expect(getByText(/예/)).not.toBeNull();
