@@ -1,9 +1,10 @@
 import React from 'react';
 
-export default function Question () {
+export default function Question ({questions}) {
+  console.log(questions);
   return (
     <div>
-      '질문 예시 입니까?'
+      {questions[0].title}
     </div>
   );
 } 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Choices from './Choices';
 import Question from './Question';
@@ -9,7 +9,7 @@ function List() {
 
 export default function App() {
   const [state, setState] = useState({
-    question: [
+    questions: [
       {
         id: 1,
         title : '숨이 온전하게 쉬어집니까?',
@@ -20,6 +20,8 @@ export default function App() {
       },
     ],
   });
+
+  const { questions } = state;
 
   return (
     <div>
